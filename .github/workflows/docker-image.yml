@@ -28,10 +28,12 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t aguila83/graphql-action:0.0.2 .
+        docker build -t aguila83/graphql-action:latest .
 
     - name: Push Docker Image
       run: |
         docker push aguila83/graphql-action:0.0.2
+        docker push aguila83/graphql-action:latest
 
 
         
